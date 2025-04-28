@@ -4,94 +4,375 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Grace | Java Full-Stack Engineer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="./css/style.css" rel="stylesheet" />
   </head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+
   <body>
     <header>
-      <h1>David Grace</h1>
-      <p>Java Full-Stack Engineer (BFSI Specialist) | Whitefield, Bengaluru</p>
-      <nav>
-        <a href="https://linkedin.com/in/david-grace" target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/gracemann365" target="_blank">GitHub</a>
-        <a href="https://leetcode.com/gracemann365" target="_blank">LeetCode</a>
-        <a href="https://www.hackerrank.com/gracemann365" target="_blank"
-          >HackerRank</a
-        >
-        <a href="https://codeforces.com/profile/gracemann111" target="_blank"
-          >Codeforces</a
-        >
-        <a
-          href="https://auth.geeksforgeeks.org/user/gracemann365"
-          target="_blank"
-          >GeeksforGeeks</a
-        >
-      </nav>
+      <div class="container">
+        <h1>David Grace</h1>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I’m a seasoned Java Full-Stack Engineer specializing in the BFSI domain.
-        I build secure, high-throughput payment platforms, web dashboards, and
-        microservices with Spring Boot, Angular, and Node.js—ensuring
-        PCI-DSS/OWASP compliance and sub-250 ms response times under load.
-      </p>
-    </section>
-
-    <section id="skills">
-      <h2>Core Technologies</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Languages & Frameworks</h3>
-          <ul>
-            <li>Java 8–17</li>
-            <li>Spring Boot</li>
-            <li>Hibernate/JPA</li>
-            <li>JSP/Servlets</li>
-            <li>REST APIs</li>
-            <li>Python</li>
-            <li>Angular</li>
-            <li>Node.js & Express</li>
-            <li>TypeScript</li>
-            <li>HTML5 & CSS3</li>
-          </ul>
+    <main>
+      <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img
+            src="assets/Profile.jpg"
+            alt="Grace Derivatives Risk Structuring Architect"
+            class="profile-photo"
+          />
+          <p>
+            I’m a Java Full-Stack Engineer specializing in BFSI, with expertise
+            in building secure payment platforms and web dashboards using Spring
+            Boot, Angular, and Node.js. I ensure compliance with PCI-DSS/OWASP
+            standards and deliver sub-250ms response times under load.
+          </p>
         </div>
-        <div class="skill-card">
-          <h3>Data & DevOps</h3>
-          <ul>
-            <li>Oracle PL/SQL</li>
-            <li>Postgres</li>
-            <li>MySQL</li>
-            <li>Docker & Kubernetes</li>
-            <li>AWS & GitHub Actions</li>
-            <li>Git & Unit Testing</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Security & AI/ML</h3>
-          <ul>
-            <li>PCI-DSS & OWASP</li>
-            <li>Tokenization & Encryption</li>
-            <li>GPT-4 & Generative AI</li>
-            <li>BERT & NLP Models</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+      <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="experience-levels">
+          <!-- Most Recent Role -->
+          <div class="level completed">
+            <div class="icon"><i class="fas fa-check-circle"></i></div>
+            <div class="content">
+              <h3>Associate Engineer (Fintech) | ECS Fin Inc. | India</h3>
+              <span class="date">Aug 2024 – Mar 2025</span>
+              <ul>
+                <li>
+                  Consolidated BFSI Expertise: UPI flows; card processing;
+                  cross-border settlements; ISO 20022 messaging.
+                </li>
+                <li>
+                  Built Payment Gateway & MVC App: Implemented non-prod IMS
+                  Gateway (Struts, Hibernate/JPA, Jackson, Bean Validation,
+                  SLF4J) & Travel app (JSP/Servlets, JDBC, Hibernate).
+                </li>
+                <li>
+                  Prototype Microservices: REST API using Spring Web MVC,
+                  DataJPA, Actuator & Swagger for self-upskilling.
+                </li>
+                <li>
+                  Built Janebot AI Chatbot (pet project): Java backend with
+                  GPT-4 TTS integration to mimic a human companion.
+                </li>
+              </ul>
+            </div>
+          </div>
 
-    <section id="projects">
-      <h2>Active Projects</h2>
-      <div class="projects">
-        <!-- Project cards as before -->
-      </div>
-    </section>
+          <!-- Earlier Role -->
+          <div class="level completed">
+            <div class="icon"><i class="fas fa-check-circle"></i></div>
+            <div class="content">
+              <h3>Chief Engineer | Gracemann | Remote</h3>
+              <span class="date">Jan 2023 – Jul 2024</span>
+              <ul>
+                <li>
+                  Built LLM Support Bot: Improved Tier-1 support for SME
+                  payments portal handling monthly transactions.
+                </li>
+                <li>
+                  Developed Java & BERT sentiment service: Enhanced dashboard
+                  efficiency for 2 SMEs with Prometheus monitoring.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- Languages & Frameworks -->
+          <div class="skill-card">
+            <h3>Languages &amp; Frameworks</h3>
+            <div class="skill-icons">
+              <div class="skill-item">
+                <i class="fab fa-java"></i><span>Java</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-leaf"></i><span>Spring</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i><span>Hibernate</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-angular"></i><span>Angular</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i><span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-server"></i><span>Express</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-code"></i><span>TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-card">
+            <h3>Web Technologies</h3>
+            <div class="skill-icons">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i><span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-css3-alt"></i><span>CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-network-wired"></i><span>REST API</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-file-code"></i><span>JSP/Servlets</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-card">
+            <h3>Databases</h3>
+            <div class="skill-icons">
+              <div class="skill-item">
+                <i class="fas fa-database"></i><span>Oracle</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i><span>PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i><span>MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DevOps & Tools -->
+          <div class="skill-card">
+            <h3>DevOps &amp; Tools</h3>
+            <div class="skill-icons">
+              <div class="skill-item">
+                <i class="fab fa-docker"></i><span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-kubernetes"></i><span>Kubernetes</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-aws"></i><span>AWS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-github"></i><span>GitHub Actions</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git"></i><span>Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-vial"></i><span>Unit Testing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Security -->
+          <div class="skill-card">
+            <h3>Security</h3>
+            <div class="skill-icons">
+              <div class="skill-item">
+                <i class="fas fa-shield-alt"></i><span>PCI-DSS</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-shield-virus"></i><span>OWASP</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-key"></i><span>Tokenization</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-lock"></i><span>Encryption</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI/ML -->
+          <div class="skill-card">
+            <h3>AI/ML</h3>
+            <div class="skill-icons">
+              <div class="skill-item">
+                <i class="fab fa-python"></i><span>Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-robot"></i><span>TensorFlow</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-robot"></i><span>PyTorch</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-brain"></i><span>GPT-4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- OpenPay | UPI Gateway -->
+          <div class="project-card">
+            <h3>OpenPay | UPI Gateway</h3>
+            <ul>
+              <li>
+                Built a scalable microservice implementing UPI collect/pay flows
+                with idempotent retries and circuit breakers.
+              </li>
+              <li>
+                Achieved 500 trans/sec at sub-250 ms latency using JMeter on AWS
+                to handle high-volume stress tests.
+              </li>
+              <li>
+                Engineered backend in Java 17 & Spring Boot, leveraging Redis
+                queues, batched Hikari JDBC writes to MySQL/Oracle, and
+                Docker-Compose.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/gracemann365/openpay-upi-gateway"
+              target="_blank"
+              class="btn-link"
+              >View Project</a
+            >
+          </div>
+
+          <!-- MiniCard Switch | ISO 8583 Card Processing -->
+          <div class="project-card">
+            <h3>MiniCard Switch | ISO 8583 Card Processing System</h3>
+            <ul>
+              <li>
+                Built a secure card-processing pipeline parsing ISO 8583
+                messages, tokenizing PAN/CVV, and applying fraud checks.
+              </li>
+              <li>
+                Delivered 400 trans/sec throughput with sub-350 ms response
+                times, ensuring reliable fraud detection.
+              </li>
+              <li>
+                Developed backend using Java 17, Netty, HSM simulator, in-memory
+                rule engine, and Prometheus monitoring.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/gracemann365/minicard-switch"
+              target="_blank"
+              class="btn-link"
+              >View Project</a
+            >
+          </div>
+
+          <!-- Checkbook.ai | Transaction Q&A LLM -->
+          <div class="project-card">
+            <h3>Checkbook.ai | Transaction Q&amp;A LLM Service</h3>
+            <ul>
+              <li>
+                Enabled natural-language queries over transaction data via GPT-4
+                & a FAISS vector store for financial data access.
+              </li>
+              <li>
+                Achieved 10 queries/sec with sub-second responses, maintaining
+                high accuracy across test query series.
+              </li>
+              <li>
+                Built with Java 17 REST gateway, Python Flask, PostgreSQL +
+                pgvector, and Docker-Compose.
+              </li>
+            </ul>
+            <a
+              href="https://github.com/gracemann365/checkbook-ai"
+              target="_blank"
+              class="btn-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out for collaborations, inquiries, or just to
+          connect.
+        </p>
+        <div class="contact-content">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xwkgbbwa"
+            method="POST"
+          >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+
+          <div class="social-links">
+            <a href="mailto:gracemann365@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://linkedin.com/in/david-grace" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/gracemann365" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://leetcode.com/u/Gracemann365/" target="_blank"
+              ><i class="fa-solid fa-code"></i
+            ></a>
+
+            <a href="https://www.hackerrank.com/gracemann365" target="_blank"
+              ><i class="fab fa-hackerrank"></i
+            ></a>
+            <a
+              href="https://codeforces.com/profile/gracemann111"
+              target="_blank"
+              ><i class="fab fa-codeforces"></i
+            ></a>
+            <a
+              href="https://auth.geeksforgeeks.org/user/gracemann365"
+              target="_blank"
+              ><i class="fab fa-geekforgeeks"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
-      <p>
-        ✉️ <a href="mailto:gracemann365@gmail.com">gracemann365@gmail.com</a> •
-        📍 Whitefield, Bengaluru
-      </p>
+      <p>© 2024 David Grace. All rights reserved.</p>
     </footer>
     <script src="./js/script.js"></script>
   </body>
