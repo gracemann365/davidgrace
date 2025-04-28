@@ -464,6 +464,33 @@ footer {
   font-size: 0.8rem;
 }
 
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  min-width: 200px;
+  padding: 12px 20px;
+  background: #00e676;
+  color: #121212;
+  border-radius: 4px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2000;
+}
+
+.toast.error {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header .container {

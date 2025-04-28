@@ -25,11 +25,37 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach((section) => observer.observe(section));
 });
 
-// simple submission feedback
-document.getElementById("contact-form").addEventListener("submit", (e) => {
-  e.preventDefault();
+// form logic now with toast
+// function to show a toast message
+function showToast(message, isError = false) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.className = "toast show" + (isError ? " error" : "");
   setTimeout(() => {
-    alert("Message sent successfully!");
-    e.target.reset();
-  }, 800);
-});
+    toast.classList.remove("show", "error");
+  }, 3000);
+}
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const resp = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (resp.ok) {
+        showToast("Message sent successfully!");
+        form.reset();
+      } else {
+        showToast("Error sending message. Please try again.", true);
+      }
+    } catch (err) {
+      showToast("Network error—check your connection.", true);
+    }
+  });
